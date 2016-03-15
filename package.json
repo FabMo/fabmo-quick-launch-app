@@ -1,13 +1,13 @@
 {
-  "name": "Fire-Up!",
+  "name": "Quick Launch",
   "main": "./index.html",
   "icon": "icon.png",
   "icon_color": "#9C210C",
-  "version": "0.0.9",
+  "version": "0.0.3",
   "author": "Ted Hall + Ryan Sturmer",
   "website": "http://www.handibot.com",
-  "description": "Daily Handibot Start-Up and Info",
-  "id": "fabmo-fireup",
+  "description": "Running a first file with your Handibot ...",
+  "id": "fabmo-quick-launch",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-zip": "^0.17.1"
