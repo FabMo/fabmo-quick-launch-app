@@ -26,19 +26,19 @@
       <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#tab-startfire" role="tab" data-toggle="tab">Quick Launch</a></li>
         <li><a href="#tab-details" role="tab" data-toggle="tab">Details</a></li>
-        <li><a href="#tab-preferences" role="tab" data-toggle="tab">Preferences</a></li>
         <li><a id="config-tab-link" href="#tab-config" role="tab" data-toggle="tab">Getting HELP</a></li>
       </ul>
 
       <div class="tab-content">
-        <!-- Fire-Up!/start pane -->
+        <!-- Launch pane -->
         <div class="tab-pane active" id="tab-startfire">
             <h2><strong>Hello! Welcome to Handibotting ...</strong></h2>
-            <p>If you haven't already done it, please take a look at the Handibot <strong>Safety Section</strong> in the <strong>Quick Launch Manual</strong>. [You should have received a hard copy with your tool. If not, there is a PDF version on the Handibot website under Support > Docs; but since you are probably connected to your tool in AP Mode at the moment, you'll need to get back on the internet to get a copy.]</p>
-            <p><strong>Let's get started with your Handibot.</strong> Click through the check-list below to set-up your tool and cut a test file. It's a great way to familiarize yourself with using your Handibot. Read along then click the green labels here to put your tool in action. Later you can take on the more challenging work of creating your own projects and managing the Handibot more directly.</p>
+            <p>If you haven't already done it, please take a look at the Handibot <strong>Safety Section</strong> in the <strong>Handibot 2 Manual</strong>. [You should have received a hard copy with your tool. If not, there is a PDF version on the Handibot website under Support > Docs; but since you are probably connected to your tool in AP Mode at the moment, you'll need to get back on the Internet in order to get a copy.]</p>
+            <p><strong>Let's get started with your Handibot.</strong> Click through the check-list below to set-up your tool and cut a test file. It's a great way to familiarize yourself with using your Handibot. Read along then click the green labels here to put your tool in action. Later you can take on the more challenging work of creating your own projects and managing your Handibot more directly.</p>
             <div>
             <hr width = "90%" noshade>
-              <span class="label label-info"> Hey first things first ... let's remove the packing. You'll need to move the Z axis (the vertical axis) up to allow you to remove the protective tube around the cutter.</span>
+              <span class='btn btn-primary'> Hey first things first ... let's remove the packing.</span>
+              <p>You'll need to move the Z axis (the vertical axis) up to allow you to remove the protective foam around the cutter. We can let the tool do the work.</p>
               <p class='instr-photo'> </p>
               <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
@@ -47,8 +47,10 @@
                   </div>
                 </div>
               </div>  
-              <h3><a class="btn btn-success btn-lg" id="call-c3"> Move my Z up a little bit ... </a> << Click right here to move it up ... </h3>
-              <p><strong>Oh ... BTW, you'll be asked for permission</strong> whenever the Handibot is about to move! Push and Hold (1 sec) that plastic green button on the top of the tool. </p>
+              <h3><strong>v</strong>&nbsp;&nbsp;&nbsp;Click here to move the Z axis up ... <strong>v</strong></h3> 
+              <h3><a class="btn btn-success btn-lg" id="call-c3"> Move my Z up a little bit for clearance ... </a> </h3>
+              <p><strong>Oh ... BTW, you'll be asked for permission</strong> whenever the Handibot is about to move! Push and Hold (1 sec) that plastic <strong>Green Button</strong> on the top of the tool. </p>
+              <p> </p>  
               <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
                   <div class="image-wrapper">
@@ -61,23 +63,23 @@
             </div>
             <hr width = "90%" noshade>
             <div>
-              <span class="label label-info"> When you use your Handibot, you'll almost always want to start by setting the Home location for each axis.</span>
+              <span class='btn btn-primary'> When you use your Handibot, you'll almost always want to start by setting the Home location for each axis.</span>
               <h3><a class="btn btn-success btn-lg" id="call-c3"> SET MY XYZ HOME LOCATION </a> << Be ready to move out or the way when you click here !</h3>
                 <p>And yes, you'll need to use the green button again to get things started. Note that you can always use this function to set your tool's home. This same "set-up" function and others are included in the FireUp! App, along with more detailed explanations of their actions.</p>
             </div>
             <div>
             <hr width = "90%" noshade>
-              <span class="label label-info"> Moving Your Handibot Around ... </span>
+              <span class='btn btn-primary'> Moving Your Handibot Around ... </span>
                 <p>Normally, you will use the keypad in the right hand panel to move your tool around. Feel free to try these out by clicking on them -- the button in the middle enables the arrow keys on a PC. You can use the labels below to toggle the right panel in and out (or use the little "hamburger"icon at the top right):</p>
-              <button id="call-DRO-rollout" class="btn btn-primary">click here if the KEYPAD is not visble</button>
-              <button id="call-DRO-hide" class="btn btn-primary">or, Hide the KEYPAD</button>
+                <button id="call-DRO-rollout" class="btn btn-success btn-lg">click here if the KEYPAD is not visble</button>
+                <button id="call-DRO-hide" class="btn btn-success btn-lg">or, Hide the KEYPAD</button>
                 <p></p>
             </div>
             <div>
               <hr width = "90%" noshade>
-              <span class="label label-warning"> Now, let's try running a file ... </span>
+              <span class='btn btn-primary'> Now, let's try running a file ... </span>
                 <p>Your Handibot should be all set to run a test file on the bottom half of the board that came attached to the bottom of your tool. Make sure the switch on the router is set to ON, and that the speed is set to about 3 on the dial on the router. </p>
-              <h3><a class="btn btn-success btn-lg" id="run-test"> Run the "Test" Job </a> << This time we'll acutally cut ...</h3>
+              <h3><a class="btn btn-success btn-lg" id="run-test"> Run the "Test" Job </a> << This time we'll actually cut something ...</h3>
                 <p>If you have changed your cutter, you will need to re-measure its length. Measuring the cutter is done for you by having the tool "touch-off" on the Z-Zeroing plate. First the tool will move in X and Y to check its location. Then, when requested, <strong>rotate the plate into position and put the aligator clip on the cutter shank</strong>, and click "continue". [NOTE: Clip to the cutter-shank and not the collet-nut; the collet-nut does not provide a reliable electrical connection.]</p>
             </div>  
             <div>
@@ -92,13 +94,8 @@
               </div>  
               <hr width = "90%" noshade>
               <hr width = "90%" noshade>
-              <span class="label label-warning"> SPECIALTY FUNCTIONS FOR OCCASIONAL USE </span>
-              <h3><a class="btn btn-success" id="call-set-z-zero"> Use Current Z-Zero Location for Measured Length </a> </h3>
-                <p>This is for situations where you have manually zeroed the cutter to your surface (for example, using the keypad to carefully lower the cutter to just touching and using the "0" button). This utility will compute the new "cutter-length-offset" and save it as if you had used the automatic measurement routine and work with the "XYZ Zero" routine above (or, Macro#3).</p>
-              <h3><a class="btn btn-success" id="call-reset-z-off"> Reset Offset Value for Zeroing Plate Height </a> </h3>
-                <p>You may find it necessary, on occasion, to adjust the value for the distance between the Zeroing plate and the material surface that is used to compute the "cutter-length-offset". This routine will step you through the process of getting the correct plate height.</p>
             </div>  
-        </div>
+        </div><!-- end Launch Pane -->
 
         <!-- Details Pane -->
         <div class="tab-pane" id="tab-details">
@@ -120,96 +117,9 @@
             <h3>Measuring Bit Length</h3>
             	<p>Measuring Bit Length is sometimes called Z-Zeoring, because we are really determing the zero location for the tip of the cutter in the Z axis. More importantly for a Handibot, we are determining the back-off distance from the top Z-axis, stop to having the tip of the cutter exactly at the material (at Zero). Your tool uses electrical contact with a Z-zero plate to tell exactly the distance the tip of the cutter from the stop. It then adds the known distance from the Z-zero plate to the material surface in order to calculate an overall back-off distance that we call, "current_cutter_Zoffset". So it is not really a measurement of the actual length of the bit, but the determination of an offset distance that is based on the exposed length of the cutter.</p>
             	<p>You will also see the "current_cutter_Zoffset" in the <code>Preferences</code> tab (above).</p>
-        </div>
+        </div><!-- end Details Pane -->
 
-        <!-- Preferences Pane -->
-        <div class="tab-pane" id="tab-preferences">
-          <h2>Preference Settings</h2>
-	          <p>Your Handibot comes with a number of variables with preset values that it uses in operations to assist you.  These variables all have default values, but you are able to modify them to suit your specific needs. After you change them, the values will persist even when the tool is turned off. These preference settings are conceptually at a higher, use-and-utility level than the values set in the System Configuration available in the left side pull out; the latter define the actual motion and mechanical operation of the tool.</p>
-	          <p>The preference settings are saved using a system of "persistent variables". There are several ways these persistent variables can be modified directly or by job files, but for the moment the simplest approach is to just change them here.</p>
-       	    <!-- Responsive form for inputting preferences -->
-	        <div class="row">
-	             <div class="col-sm-7" style="margin-left: auto; margin-right: auto; text-align: left; ">
-	              <form class="form-horizontal" id="form-jobs">
-	              <h4>Variables for Setting X and Y Home Location </h4>
-	              <p>These variables are used to set the Home location for X and Y zero. </p>
-	                <div class="form-group">
-	                  <label for="pref-input-xpullback" class="col-sm-3 control-label">X Pull-back</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-x-pull" value=".10">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="form-group">
-	                  <label for="pref-input-ypullback" class="col-sm-3 control-label">Y Pull-back</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-y-pull" value=".10">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	              <h4>Variables for Setting ZZero Location </h4>
-	              <p>These variables are used during zeroing to set the location for Z zero. </p>
-	                  <div class="form-group">
-	                  <label for="job-input-zlength" class="col-sm-3 control-label">Cutter Length</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-cur-zlength" value=".25">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="form-group">
-	                  <label for="job-input-zto-surf" class="col-sm-3 control-label">Zero Plate Height</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-plate-offset" value=".75">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	              <h4>Variables for Setting a Parking Location </h4>
-	              <p>Setting the location for move to a Park location. You might use this at the end of jobs. There is a button for it in the Fire-Up! App. </p>
-	                  <div class="form-group">
-	                  <label for="job-input-xpark" class="col-sm-3 control-label">X Park Location</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-x-park" value="3">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="form-group">
-	                  <label for="job-input-ypark" class="col-sm-3 control-label">Y Park Location</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-y-park" value="7">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="form-group">
-	                  <label for="job-input-zpark" class="col-sm-3 control-label">Z Park Location</label>
-	                  <div class="col-sm-9">
-	                    <div class="input-group has-success">
-	                      <input class="form-control num-input" id="pref-input-z-park" value="1.5">
-	                      <span class="input-group-addon">in</span>
-	                    </div>
-	                  </div>
-	                </div>
-	                <div class="form-group">
-	                  <div class="col-sm-12 has-success" style="text-align: right;">
-	                    <a class="btn btn-success btn-lg" id="pref-save">SAVE</a>&nbsp;&nbsp;<a href="#tab-details" class="btn btn-warning btn-lg" id="pref-cancel">CANCEL</a>
-	                  </div>
-	                </div>
-	              </form>
-	             </div> 
-	          </div> <!-- row -->
-        </div> <!-- tab pane -->
-
+        <!-- Help Pane -->
         <div class="tab-pane" id="tab-config">
           <h2>Additional Help Resources</h2>
             <p>Handibots are a new kind of power tool. They are intrinsically safer than manual power tools. But please read the safety information to understand the precautions you should observe with these new tools.</p>
@@ -220,11 +130,6 @@
           <h3><a class="btn btn-primary" id="go-forum"> Handibot Forum </a></h3>
           <hr width = "90%" noshade>
           <hr width = "90%" noshade>
-          <h3>System Configuration Information to Share with Tech Support</h3>
-            <p>The following is a listing of the current, system-wide configuration tree for the FabMo digital fabrication platform that is running on your Handibot. It can be useful for diagnostics:</p>
-            <div class="well" id="config-system-config">
-              <em>On a live Fabmo system, system configuration information would appear here.</em>
-            </div>
         </div>
       </div> <!-- tab content -->
     </div><!-- container -->
@@ -234,6 +139,9 @@
     <script src="js/control.js"></script>
     <script src="js/preferences.js"></script>
     <script src="js/actions.js"></script>
+    <script type="text/javascript">
+        fabmo.hideDRO();
+    </script>
 
     <script type="text/javascript">
         // Prevent a stray enter key from inadvertently submitting a form (and setting the tool in motion!)
