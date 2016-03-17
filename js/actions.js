@@ -29,9 +29,14 @@ $("#call-DRO-rollout").click(function(evt) {
 $("#call-DRO-hide").click(function(evt) {
     fabmo.hideDRO();
 });
-$("#call-touch-and-go").click(function(evt) {
-    fabmo.launchApp('fabmo-touchandgo');
+
+// Specials
+
+$("#run-test").click(function(evt) {
+    console.log('run test clicked');
+    DoJobFile();
 });
+
 
 
 

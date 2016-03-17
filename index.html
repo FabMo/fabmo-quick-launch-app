@@ -21,6 +21,12 @@
   		var fabmo = new FabMoDashboard();
   	</script>
 
+    <script src="js/helptab.js"></script>
+    <script src="js/jobfile.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/preferences.js"></script>
+    <script src="js/actions.js"></script>
+
     <div class="container">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -77,7 +83,7 @@
               <hr width = "90%" noshade>
               <span class="label label-warning"> Now, let's try running a file ... </span>
                 <p>Your Handibot should be all set to run a test file on the bottom half of the board that came attached to the bottom of your tool. Make sure the switch on the router is set to ON, and that the speed is set to about 3 on the dial on the router. </p>
-              <h3><a class="btn btn-success btn-lg" id="call-c2"> Run the "Test" Job </a> << This time we'll acutally cut ...</h3>
+              <h3><a class="btn btn-success btn-lg" id="run-test"> Run the "Test" Job </a> << This time we'll acutally cut ...</h3>
                 <p>If you have changed your cutter, you will need to re-measure its length. Measuring the cutter is done for you by having the tool "touch-off" on the Z-Zeroing plate. First the tool will move in X and Y to check its location. Then, when requested, <strong>rotate the plate into position and put the aligator clip on the cutter shank</strong>, and click "continue". [NOTE: Clip to the cutter-shank and not the collet-nut; the collet-nut does not provide a reliable electrical connection.]</p>
             </div>  
             <div>
@@ -102,7 +108,8 @@
 
             </div>  
 
-          <script src="js/actions.js"></script>
+          
+          
 
         </div>
 
@@ -129,8 +136,7 @@
             	<p>Measuring Bit Length is sometimes called Z-Zeoring, because we are really determing the zero location for the tip of the cutter in the Z axis. More importantly for a Handibot, we are determining the back-off distance from the top Z-axis, stop to having the tip of the cutter exactly at the material (at Zero). Your tool uses electrical contact with a Z-zero plate to tell exactly the distance the tip of the cutter from the stop. It then adds the known distance from the Z-zero plate to the material surface in order to calculate an overall back-off distance that we call, "current_cutter_Zoffset". So it is not really a measurement of the actual length of the bit, but the determination of an offset distance that is based on the exposed length of the cutter.</p>
             	<p>You will also see the "current_cutter_Zoffset" in the <code>Preferences</code> tab (above).</p>
 
-          <script src="js/actions.js"></script>
-          <script src="js/control.js"></script>
+          
 
         </div>
 
@@ -223,7 +229,7 @@
 	             </div> 
 	          </div> <!-- row -->
 
-          <script src="js/preferences.js"></script>
+          
         </div> <!-- tab pane -->
 
         <div class="tab-pane" id="tab-config">
@@ -243,8 +249,8 @@
             <div class="well" id="config-system-config">
               <em>On a live Fabmo system, system configuration information would appear here.</em>
             </div>
-            <script src="js/helptab.js"></script>
-            <script src="js/actions.js"></script>
+
+            
         </div>
       </div> <!-- tab content -->
     </div><!-- container -->
