@@ -2,7 +2,7 @@
 
 function DoJobFile () {
   var sbp = "";
-  var jobPath = 'jobs/test_carve_01.sbp';
+  var jobPath = 'jobs/test_carve.sbp';
   
   jQuery.get(jobPath, function(data) {
       sbp += data;
@@ -15,7 +15,7 @@ function DoJobFile () {
       console.log("job submitted");
       fabmo.submitJob({
         file: sbp,
-        filename: 'test_file' + '.sbp',
+        filename: 'test_carve' + '.sbp',
         name: "test_01",
         description: "First File: " + jobPath
       });

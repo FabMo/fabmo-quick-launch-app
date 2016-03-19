@@ -33,8 +33,10 @@ $("#call-DRO-hide").click(function(evt) {
 // Specials
 
 $("#run-test").click(function(evt) {
-    console.log('run test clicked');
     DoJobFile();
+});
+$("#call-zup").click(function(evt) {
+    fabmo.runSBP('MZ,4');
 });
 
 
