@@ -40,7 +40,7 @@
               <span class='btn btn-primary'> Hey first things first ... let's remove the packing.</span>
               <p>Let's let the tool do some of the work. We'll move the Z axis -- it's the up-down, vertical axis that moves the router -- to a higher position to allow you to remove the protective foam-cylinder from around the cutter. So, close the lid, then click the next green label ...</p>
               <p><strong>Oh ... BTW, you'll be asked for permission</strong> whenever the Handibot is about to move! Push and Hold (1 sec) the plastic <strong>Green Button</strong> on the top of the tool. </p>
-              <p><strong> ... and yes, the tool will bang into the top </strong> limit because we want to make sure it is all the way up.</p>
+              <p><strong> ... and yes, the tool will bang into the top </strong> limit because we want to make sure it is all the way up. (It won't do any damage, but if it gets annoying, you can hit the <strong>STOP Button</strong> at the bottom of the screen.)</p>
               <h3><a class="btn btn-success btn-lg" id="call-zup"> CLICK HERE > to move Z-axis up a little bit for clearance ... </a> </h3>
               <p> </p>  
               <p class='instr-photo'> </p>
@@ -51,28 +51,60 @@
                   </div>
                 </div>
               </div>  
-              <p></p>  
+              <p> </p>  
               <p>After the tool has pulled up, <strong>remove that protective tube</strong>. </p>
             </div>
             <hr width = "90%" noshade>
             <div>
               <span class='btn btn-primary'> When you use your Handibot, you'll almost always want to start by setting the Home location for each axis.</span>
-              <h3><a class="btn btn-success btn-lg" id="call-c3"> CLICK HERE > to Set Your XYZ HOME LOCATION </a> << Make sure your Handibot is clear before clicking !</h3>
-                <p>And yes, you'll need to use the green button again to get things started. Note that you can always use this "Set XYZ Home" function when needed to make sure the coordinates are all calibrated as they should be. This same function is included in the FireUp! App that will be useful to you for daily set-up tasks.</p>
+              <h3><a class="btn btn-success btn-lg" id="call-c3"> CLICK HERE > to Set Your XYZ HOME LOCATION </a> << Clear area before clicking !</h3>
+                <p>And yes, you'll need to use the <strong>Green Button</strong> again to get things started. Note that you can always use this "Set XYZ Home" function when needed to make sure the coordinates are all calibrated as they should be. This same function is included in the <code>FireUp!</code> App that will be useful to you for daily set-up tasks.</p>
             </div>
             <div>
             <hr width = "90%" noshade>
               <span class='btn btn-primary'> Moving Your Handibot Around ... </span>
-                <p>Normally, you will use the keypad in the right hand panel to move your tool around. Feel free to try these out by clicking on them -- the button in the middle enables the arrow keys on a PC. You can use the labels below to toggle the right panel in and out (or use the little "hamburger"icon at the top right):</p>
-                <button id="call-DRO-rollout" class="btn btn-success btn-lg">click here if the KEYPAD is not visble</button>
-                <button id="call-DRO-hide" class="btn btn-success btn-lg">or, Hide the KEYPAD</button>
-                <p></p>
+                <p>When we aren't helping you out in an App like this, you will use the "Keypad" in the right-side, "DRO", panel to move your tool around. Feel free to try its Keypad buttons by clicking on them -- the button in the middle enables the arrow keys on a PC. It's probably not visible so you can use the labels below to toggle the right-side panel in and out (and normally, you can use the little "hamburger" icon at the top right of the Dashboard to do this):</p>
+	            <p class='instr-photo'> </p>
+	            <div class="pure-g">
+	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
+	                <div class="image-wrapper">
+	                  <img class='pure-img' id="rotate-plate" src="img/fullkeypad.png">
+	                </div>
+	              </div>
+	            </div>  
+	            <p> </p>  
+                <button id="call-DRO-rollout" class="btn btn-success btn-lg">CLICK HERE > if the KEYPAD is not visble</button>
+                <button id="call-DRO-hide" class="btn btn-success btn-lg">or, HERE > to Hide the KEYPAD</button>
+                <p> </p>
             </div>
             <div>
               <hr width = "90%" noshade>
-              <span class='btn btn-primary'> Now, let's try running a file ... </span>
-                <p>Your Handibot should be all set to run a test file on the bottom half of the board that came attached to the bottom of your tool. Make sure the switch on the router is set to ON, and that the speed is set to about 3 on the dial on the router. </p>
-              <h3><a class="btn btn-success btn-lg" id="run-test"> Run the "Test" Job </a> << This time we'll actually cut something ...</h3>
+              <span class='btn btn-primary'> NOW, let's try running a job ... </span>
+                <p>Your Handibot should be all set to run a test file on the board that came attached to the bottom of your tool. We'll run the same job on the lower half of the board that was run in the top of the work area before it left Handibot HQ. It was our check to make sure your tool was working well.</p>
+                <p><strong>Job Preparation:</strong></p>
+                <ul>
+                	<li>If you feel like your tool may have lost its location (e.g. you had to turn it off to move it, or you ran it into the hard stops when you were Keypadding around ...), then feel free to run the "Set XYZ Home" function above.
+                	<li>Make sure the switch on the router is set to ON, and that the speed is set to about 3 on the dial on the router.</li>
+                	<li>If you have a vacuum handy you can hook it up to the outlet on the Handibot, but we won't be making a lot of dust.</li>
+                	<li>To run this project, we will be making use the <code>Job Manager</code> system-app which you will normally access from the left-side panel when you are ready to run a job. </li>
+                </ul> 
+              <hr width = "90%" noshade>
+                <p><strong>After you've run this first job ... you will have hopefully gotten the basic idea of how a job is done with a Handibot. After it's done, if you come back to this App and move on to the <code>Next Steps</code> tab above, we'll introduce you to where you will want to go from here.</strong></p>
+                <p> </p>
+	            <p>You'll first go to the "Start" panel for the Job Manager. Just click the green arrow to get the job started when you are ready. You'll need to provide authorization with that Green Button. <strong>As the file runs, note that there is a STOP indicator at the bottom of the window. Hit this Stop, or the flashing red square to Stop the file!</strong> </p>  
+                <p> </p>
+                <p> </p>
+	            <p class='instr-photo'> </p>
+	            <div class="pure-g">
+	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
+	                <div class="image-wrapper">
+	                  <img class='pure-img' id="rotate-plate" src="img/carving.png">
+	                </div>
+	              </div>
+	            </div>  
+              <h3><a class="btn btn-success btn-lg" id="run-test"> CLICK HERE > to Run the "Test-Carve" Job </a> >> And away we go !</h3>
+              <hr width = "90%" noshade>
+	            <p> </p>  
               <hr width = "90%" noshade>
               <hr width = "90%" noshade>
             </div>  
@@ -80,24 +112,36 @@
 
         <!-- Details Pane -->
         <div class="tab-pane" id="tab-details">
-            <h2>Detailed Info on this FireUp! App</h2>
-            <p>This App contains a variety of "helper" functions and information for setting-up and using your Handibot. It's designed to help you learn about your tool and its operation. Most functions have short-cuts or more direct methods for putting them to use rather than using this App. After you become knowledgeable and comfortable in the use of your tool, you may find you don't use the App itself anymore. Feel free to delete it (you can always get it back from the Handibot website)</p>
-            <h3>Setting the XYZ Home Locations</h3>
-            	<p>Determining the zero location of each axis is automatically done for you by moving into the end-stops of the axis and then backing off an exact known distance to the location where Zero for the particular axis is set, defining your Home Location.</p>
-            	<p>The back-off distance is determined at the factory and saved as a persistant variable. As you get more experienced, you may want to change the back-off distance in order to move your zero locations to better suit your work, for a particular project, or just to make a slight adjustment of your zero location. You can modify the back-off distance for each axis in the <code>Preferences</code> tab (above).</p>
-            	<p>Using the Set Home function in this app is the same thing as clicking on <strong>Macro#3</strong> in the system macros, where the motion instructions are actually stored. It also the same as using the <strong>[C3] Command</strong> in the Sb4 App or in the OpenSBP fabrication language. You can use each, interchangeably.</p> 
-        		<div class="well" id="cartesian-message">
-                  <p><strong>Your Handibot's Coordinate System</strong> </p>
-              		<p>Your tool moves around in a Cartesian coordinate system. The X axis (left/right) and the Y axis (front/back) are in the plane of the material. The X = 0 and Y = 0 locations are at the bottom left corner as you face the front of the tool. Moving the tool-head to the right is moving in increasing value in the X axis, moving it towards the back is moving it in increasing value the Y axis. Up/Down motion of the router is the  Z axis. Down is the negative direction. Zero in the Z is typically set at the height that the cutter tip is just touching the surface of the material (though for special purposes it can be set anywhere). To explore the coordinate system, Play with the keypad on in the red, DRO panel on the right:</p>
-              <button id="call-DRO-rollout" class="btn btn-primary">click here if the KEYPAD is not visble</button>
-              <button id="call-DRO-hide" class="btn btn-primary">or, Hide the KEYPAD</button>
-                  <p></p>
-              		<p>The "Touch-and-Go App" can be very instructive in understanding the coordinate system. It is also helpful in just moving the tool around. Click the button below to try it out:</p>
-              		<h4><a class="btn btn-success" id="call-touch-and-go"> start: Touch-and-Go </a></h4>
-            	</div>
-            <h3>Measuring Bit Length</h3>
-            	<p>Measuring Bit Length is sometimes called Z-Zeoring, because we are really determing the zero location for the tip of the cutter in the Z axis. More importantly for a Handibot, we are determining the back-off distance from the top Z-axis, stop to having the tip of the cutter exactly at the material (at Zero). Your tool uses electrical contact with a Z-zero plate to tell exactly the distance the tip of the cutter from the stop. It then adds the known distance from the Z-zero plate to the material surface in order to calculate an overall back-off distance that we call, "current_cutter_Zoffset". So it is not really a measurement of the actual length of the bit, but the determination of an offset distance that is based on the exposed length of the cutter.</p>
-            	<p>You will also see the "current_cutter_Zoffset" in the <code>Preferences</code> tab (above).</p>
+            <h2>Next Steps in Working with Handibot</h2>
+            <p>The Dashboard provides access for all the work you will be doing with your Handibot. Note its System Apps in the left-side panel, the App Area in the center, and the right-side, DRO panel with Keypad for manually moving the tool-head.<p>
+                <p> </p>
+	            <p class='instr-photo'> </p>
+	            <div class="pure-g">
+	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
+	                <div class="image-wrapper">
+	                  <img class='pure-img' id="rotate-plate" src="img/dash.png">
+	                </div>
+	              </div>
+	            </div>  
+            <h3>Handibot Utility Apps</h3>
+            	<p>Most Apps will provide a direct way to carry out specific jobs or tasks. <code>Hole Cutter </code>is an example of a basic utility App.</p>
+            <h3>More Advanced Apps</h3>
+            	<p>On-board Apps can also carry out some simple parametric design tasks. Check out <code>Beamer</code> and <code>TerrainMan</code>. Basically set the parameters and then click "Done" or "Cut" and your project will be sent to the Job Manager to run.</p>
+            <h3>Specialty Apps</h3>
+                <ul>
+                	<li><code>Touch-and-Go</code> will move your tool-head to a designated location.</li>
+                	<li><code>Sb4</code> is a traditional CNC interface, similar to ShopBot's standard interface.</li>
+                	<li><code>Fire-Up!</code> will help you with daily Handibot set-up activities.</li>
+                	<li><code>theNews</code> will keep you posted on the latest Handibot News and Bulletins.</li>
+                	<li><code>ExampleApp</code> is the definitive example of how to create an App.</li>
+                </ul>
+            <h3>Creating your own Jobs: DESIGN</h3>
+                <p>Once you've got a feel for how the FabMo platform works and the usefullness of Apps, you'll want to start working on designing your own projects that you will run using the Job Manager. We've provided some great software to get started with design for digital fabrication.</p>
+            <h3><a class="btn btn-primary" id="get-design"> CLICK HERE > to get DESIGN SOFTWARE INFO </a></h3>
+            <hr width = "90%" noshade>
+            <hr width = "90%" noshade>
+      
+
         </div><!-- end Details Pane -->
 
         <!-- Help Pane -->

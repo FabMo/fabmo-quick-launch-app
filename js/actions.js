@@ -33,6 +33,7 @@ $("#call-DRO-hide").click(function(evt) {
 // Specials
 
 $("#run-test").click(function(evt) {
+    fabmo.showDRO();
     DoJobFile();
 });
 $("#call-zup").click(function(evt) {
