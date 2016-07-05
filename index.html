@@ -33,16 +33,14 @@
         <!-- Launch pane -->
         <div class="tab-pane active" id="tab-startfire">
             <h2><strong>Hello! Welcome to Handibotting ...</strong></h2>
-            <p>If you haven't already done it, please take a look at the Handibot <strong>Safety Section</strong> from the <strong>Handibot Manual</strong>. [You should have received a hard copy with your tool. If not, there is a PDF version on the web at docs.handibot.com; but since you are probably connected to your tool in AP Mode at the moment, you'll need to get back on the Internet in order to view a copy.]</p>
-            <p><strong>Let's get started with your Handibot.</strong> Click through the action-list below to set-up your tool and carve a test file. It's a great way to familiarize yourself with using your Handibot. Read along then click the <strong>green labels</strong> as you encountere them to put your tool in action. Later you can take up the more challenging work of designing and creating your own projects and, running and managing your Handibot more directly.</p>
+            <h4>We’re going to move the tool and carve a test file.</h4>
+            <p>We'll move the Z-axis &emdash; it's the up-down, vertical axis that moves the router &emdash; to a higher position. The tool will bang into the upper limit (but it won't do any damage.) So, close the lid, then click the next green label&hellip;</p>
+            <h3><a class="btn btn-success btn-lg" id="call-zup"> Move the Z-axis up a little bit for clearance</a> </h3>
             <div>
             <hr width = "90%" noshade>
-              <span class='btn btn-primary'> Hey first things first ... let's remove the packing.</span>
-              <p>Let's let the tool do some of the work. We'll move the Z axis -- it's the up-down, vertical axis that moves the router -- to a higher position to allow you to remove the protective foam-cylinder from around the cutter. So, close the lid, then click the next green label ...</p>
-              <p><strong>Oh ... BTW, you'll be asked for permission</strong> whenever the Handibot is about to move! Push and Hold (1 sec) the plastic <strong>Green Button</strong> on the top of the tool. </p>
-              <p><strong> ... and yes, the tool will bang into the top </strong> limit because we want to make sure it is all the way up. (It won't do any damage, but if it gets annoying, you can hit the <strong>STOP Button</strong> at the bottom of the screen.)</p>
-              <h3><a class="btn btn-success btn-lg" id="call-zup"> CLICK HERE > to move Z-axis up a little bit for clearance ... </a> </h3>
-              <p> </p>  
+             
+              <p><strong>You’ll always be asked for permission</strong> whenever the Handibot is about to move, to concur, push and hold (1 sec) the plastic <strong>Green Button</strong> on the top of the tool.</p>
+              
               <p class='instr-photo'> </p>
               <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
@@ -52,12 +50,12 @@
                 </div>
               </div>  
               <p> </p>  
-              <p>After the tool has pulled up, <strong>remove that protective tube</strong>. </p>
+              <p>After the router has moved up, <strong>remove that protective foam tube</strong>. </p>
             </div>
             <div>
             <hr width = "90%" noshade>
-              <span class='btn btn-primary'> Moving Your Handibot Around ... </span>
-                <p>When we aren't helping you out in an App like this, you will use the "Keypad" in the right-side, "DRO", panel to move your tool around. Feel free to try its Keypad buttons by clicking on them -- the button in the middle enables the arrow keys on a PC. It's probably not visible so you can use the labels below to toggle the right-side panel in and out (and normally, you can use the little "hamburger" icon at the top right of the Dashboard to do this):</p>
+              <h4> Moving Your Handibot Around&hellip;</h4>
+                <p>Click on target in upper right corner and use the arrow buttons to move the Handibot. Despite the noise, it is safe to move the Handibot to all extreme directions. Just beware of moving the router all the way down, the installed bit can crash into your material, damaging the bit.</p>
 	            <p class='instr-photo'> </p>
 	            <div class="pure-g">
 	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
@@ -67,32 +65,29 @@
 	              </div>
 	            </div>  
 	            <p> </p>  
-                <button id="call-DRO-rollout" class="btn btn-success btn-lg">CLICK HERE > if the KEYPAD is not visble</button>
-                <button id="call-DRO-hide" class="btn btn-success btn-lg">or, HERE > to Hide the KEYPAD</button>
+                <button id="call-DRO-rollout" class="btn btn-success btn-lg">Make the KEYPAD visible</button><br>
+                <button id="call-DRO-hide" class="btn btn-success btn-lg">Hide the KEYPAD</button>
                 <p> </p>
             </div>
             <hr width = "90%" noshade>
             <div>
-              <span class='btn btn-primary'> When you use your Handibot, you'll almost always want to start by setting the Home location for each axis.</span>
-              <h3><a class="btn btn-success btn-lg" id="call-c3"> CLICK HERE > to Set Your XYZ HOME LOCATION </a> << Clear area before clicking !</h3>
-                <p>And yes, you'll need to use the <strong>Green Button</strong> again to get things started. Note that you can always use this "Set XYZ Home" function when needed to make sure the coordinates are all calibrated as they should be. This same function is included in the <code>FireUp!</code> App that will be useful to you for daily set-up tasks. We're making sure we are exactly "homed" here in all axes before running the test job.</p>
+              <h4>Each time you use your Handibot, start by setting the Home location for each axis.</h4>
+              <h3><a class="btn btn-success btn-lg" id="call-c3">Set Your XYZ HOME LOCATION <br> Clear area around the tool first!</a> </h3>
+                <p>Use the <strong>Green Button</strong> to get things started. Note: if you manually (with the keypad) move the Handibot position after homing XYZ, you will have to set the XYZ home location again. This same function is included in the <code>FireUp!</code> App that will be useful for daily set-up tasks. </p>
             </div>
             <div>
               <hr width = "90%" noshade>
-              <span class='btn btn-primary'> NOW, let's try running a job ... </span>
-                <p>Your Handibot should be all set to run a test file on the board that came attached to the bottom of your tool. We'll run the same job on the lower half of the board that was run in the top of the work area before it left Handibot HQ. It was our check to make sure your tool was working well.</p>
+              <h4> NOW, let's try running a job&hellip;</h4>
+                <p>Your Handibot should be all set to run a test cut file on the board that came attached to the bottom of your tool. We'll run the same job on the lower half of the board that was run in the top of the work area before it left Handibot HQ.</p>
+                <p>To run this project, we will be making use the <code>Job Manager</code> system-app which you will normally access from the left-side panel when you are ready to run a job.</p>
                 <p><strong>Job Preparation:</strong></p>
                 <ul>
-                	<li>Make sure the switch on the router is set to ON, and that the speed is set to about 3 on the dial on the router.</li>
+                	<li>Switch the router ON, and ensure the speed is set to 3 on the router dial.</li>
                 	<li>If you have a vacuum handy you can hook it up to the outlet on the Handibot, but we won't be making a lot of dust.</li>
-                	<li>To run this project, we will be making use the <code>Job Manager</code> system-app which you will normally access from the left-side panel when you are ready to run a job. </li>
+                	<li>Close the hood. </li>
                 </ul> 
               <hr width = "90%" noshade>
-                <p><strong>After you've run this first job ... you will have hopefully gotten the basic idea of how a job is done with a Handibot. After it's done, if you come back to this App and move on to the <code>Next Steps</code> tab above, we'll introduce you to where you will want to go from here.</strong></p>
-                <p> </p>
-	            <p>You'll first go to the "Start" panel for the Job Manager. Just click the green arrow to get the job started when you are ready. You'll need to provide authorization with that Green Button. <strong>As the file runs, note that there is a STOP indicator at the bottom of the window. Hit this Stop, or the flashing red square if you need to Stop the file!</strong> </p>  
-                <p> </p>
-                <p> </p>
+            
 	            <p class='instr-photo'> </p>
 	            <div class="pure-g">
 	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
@@ -101,11 +96,18 @@
 	                </div>
 	              </div>
 	            </div>  
-              <h3><a class="btn btn-success btn-lg" id="run-test"> CLICK HERE > to Run the "Test-Carve" Job </a> >> And away we go !</h3>
+              <h3><a class="btn btn-success btn-lg" id="run-test"> Run the "Test-Carve" Job <br> to bring up the Job Manager</a></h3>
+              <p>Press the green arrow in the <code>Job Manager</code>.</p>
+              <p>Press the <strong>Green Button</strong> on the top of the tool.</p>
+              <p><strong>As the file runs, note that there is a STOP indicator at the bottom of the window. Hit this Stop, or the flashing red square if you need to Stop the file!</strong></p>
               <hr width = "90%" noshade>
-	            <p> </p>  
+	            <p>If you haven't already done it, please take a look at the Handibot <strong>Safety Section</strong> from the <strong>Handibot Manual</strong>. [You should have received a hard copy with your tool. If not, there is a PDF version on the web at docs.handibot.com; but since you are probably connected to your tool in AP Mode at the moment, you'll need to get back on the Internet in order to view a copy.]</p>  
               <hr width = "90%" noshade>
+              <p>Upon completion of the cut, hit target button and use keypad to move the Handibot to the rear.</p>
               <hr width = "90%" noshade>
+              <p>After completing the test cut, relaunch the <code>Quick Launch</code> App and click on the <code>Next Steps</code> tab.</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
             </div>  
         </div><!-- end Launch Pane -->
 
