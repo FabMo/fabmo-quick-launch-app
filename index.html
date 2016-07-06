@@ -24,38 +24,52 @@
     <div class="container">
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li class="active"><a href="#tab-startfire" role="tab" data-toggle="tab">Quick Launch</a></li>
-        <li><a href="#tab-details" role="tab" data-toggle="tab">Next Steps</a></li>
-        <li><a id="config-tab-link" href="#tab-config" role="tab" data-toggle="tab">Getting HELP</a></li>
+        <li class="active"><a href="#tab-startfire" role="tab" data-toggle="tab"><strong>Quick Launch</strong></a></li>
+        <li><a href="#tab-details" role="tab" data-toggle="tab"><strong>Next Steps</strong></a></li>
+        <li><a id="config-tab-link" href="#tab-config" role="tab" data-toggle="tab"><strong>Getting HELP</strong></a></li>
       </ul>
 
       <div class="tab-content">
         <!-- Launch pane -->
         <div class="tab-pane active" id="tab-startfire">
-            <h2><strong>Hello! Welcome to Handibotting ...</strong></h2>
-            <h4>We’re going to move the tool and carve a test file.</h4>
-            <p>We'll move the Z-axis &emdash; it's the up-down, vertical axis that moves the router &emdash; to a higher position. The tool will bang into the upper limit (but it won't do any damage.) So, close the lid, then click the next green label&hellip;</p>
-            <h3><a class="btn btn-success btn-lg" id="call-zup"> Move the Z-axis up a little bit for clearance</a> </h3>
-            <div>
-            <hr width = "90%" noshade>
-             
-              <p><strong>You’ll always be asked for permission</strong> whenever the Handibot is about to move, to concur, push and hold (1 sec) the plastic <strong>Green Button</strong> on the top of the tool.</p>
-              
+
+			<div class="jumbotron">
+				<p>[These instructions follow-on the "Handibot 2 Manual: Unboxing" document ...]</p>
+			  <h1>Hello! Welcome to Handibotting ...</h1>
+	            <p>First, to help you finish unpacking we'll move the Z-axis &mdash; it's the up-down, vertical axis that moves the router &mdash; to a higher position so you can remove the protective foam cylinder.</p>
+	            <p>The tool will bang into its upper stop to make sure it is all the way up (this doesn't do any damage). So, close the lid, then click the green bar just below&hellip;</p>
+              <h3><a class="btn btn-success btn-lg" id="call-zup"> Click to Move the Z-axis up a little bit for clearance*</a> </h3>
+			</div>
+
+            <div>  
+              <h4><strong>*Note that you’ll always be asked for permission</strong> whenever the Handibot is about to move. <strong>To OK motion</strong>, push and hold (1 sec) the plastic <strong>Green Button</strong> on the top of the tool.</h4>
               <p class='instr-photo'> </p>
               <div class="pure-g">
                 <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
                   <div class="image-wrapper">
-                    <img class='pure-img' id="rotate-plate" src="img/remove_packing.png">
+                    <img class='pure-img' id="authorize" src="img/authorize2.png">
                   </div>
                 </div>
               </div>  
               <p> </p>  
+			</div>
+            <div>  
               <p>After the router has moved up, <strong>remove that protective foam tube</strong>. </p>
+              <p class='instr-photo'> </p>
+              <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
+                  <div class="image-wrapper">
+                    <img class='pure-img' id="remove" src="img/remove_packing.png">
+                  </div>
+                </div>
+              </div>  
+              <p> </p>  
             </div>
             <div>
             <hr width = "90%" noshade>
-              <h4> Moving Your Handibot Around&hellip;</h4>
-                <p>Click on target in upper right corner and use the arrow buttons to move the Handibot. Despite the noise, it is safe to move the Handibot to all extreme directions. Just beware of moving the router all the way down, the installed bit can crash into your material, damaging the bit.</p>
+              <h4><strong>Moving Your Handibot Around&hellip;</strong></h4>
+                <p>You use the <strong>KEYPAD</strong> to move the head of your Handibot around to get it in position for cutting, changing bits, or out-of-the-way.</p>
+                <p>Click on "Target" in upper right corner to toggle the KEYPAD in and out. Use the arrow buttons to move the Handibot around. If you move the Handibot too far in one direction of another, it will bang into its stops. Despite the noise, it is safe to move the Handibot to all extreme directions. Just beware of moving the router all the way down, the installed bit can crash into your material, damaging the bit. Also note that if you run into the end-of-travel in any direction, the location of the tool with respect to your "Home" point will be lost.</p>
 	            <p class='instr-photo'> </p>
 	            <div class="pure-g">
 	              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 image-container">
@@ -65,19 +79,17 @@
 	              </div>
 	            </div>  
 	            <p> </p>  
-                <button id="call-DRO-rollout" class="btn btn-success btn-lg">Make the KEYPAD visible</button><br>
-                <button id="call-DRO-hide" class="btn btn-success btn-lg">Hide the KEYPAD</button>
-                <p> </p>
             </div>
             <hr width = "90%" noshade>
             <div>
-              <h4>Each time you use your Handibot, start by setting the Home location for each axis.</h4>
+              <h4><strong>Each time you use your Handibot, set its Home Location.</strong></h4>
               <h3><a class="btn btn-success btn-lg" id="call-c3">Set Your XYZ HOME LOCATION <br> Clear area around the tool first!</a> </h3>
-                <p>Use the <strong>Green Button</strong> to get things started. Note: if you manually (with the keypad) move the Handibot position after homing XYZ, you will have to set the XYZ home location again. This same function is included in the <code>FireUp!</code> App that will be useful for daily set-up tasks. </p>
+                <p>Use this <strong>Green Button</strong> to get setting the Home Location started. Homing will be done for all 3 axes, so make sure the area is clear for your Handibot to move around.</p>
+                <p>Note: if you manually (ie. using the KEYPAD) move the Handibot position and run into an end-stop after homing XYZ, you will have to set the XYZ home location again. The function to Set the Home Location is also included in the <code>FireUp!</code> App. The FireUp! will be useful for daily set-up tasks. It also contains a more detailed explanation of Setting Home and the special case of setting the Z-axis after a bit change.</p>
             </div>
             <div>
               <hr width = "90%" noshade>
-              <h4> NOW, let's try running a job&hellip;</h4>
+              <h4><strong>NOW, let's try running a job&hellip;</strong></h4>
                 <p>Your Handibot should be all set to run a test cut file on the board that came attached to the bottom of your tool. We'll run the same job on the lower half of the board that was run in the top of the work area before it left Handibot HQ.</p>
                 <p>To run this project, we will be making use the <code>Job Manager</code> system-app which you will normally access from the left-side panel when you are ready to run a job.</p>
                 <p><strong>Job Preparation:</strong></p>
