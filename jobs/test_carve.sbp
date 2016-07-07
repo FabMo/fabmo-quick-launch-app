@@ -3271,9 +3271,12 @@ J3,0.000000,0.000000,0.800000
 '
 'Turning router OFF
 C7
+'Moving Back! Please continue along with "Next Steps" back in the Quick Launch App ...
+PAUSE
+J2, 3,6                           'Move to rear ...
 END
-'
-'
+
+
 UNIT_ERROR:
 CN, 91                            'Run file explaining unit error
 END

@@ -1,6 +1,7 @@
 
 $("#call-c3").click(function(evt) {
 	  fabmo.runSBP('C#,3');
+    fabmo.hideDRO();
 });
 $("#call-c2").click(function(evt) {
     fabmo.runSBP('C#,2');
@@ -33,7 +34,6 @@ $("#call-DRO-hide").click(function(evt) {
 // Specials
 
 $("#run-test").click(function(evt) {
-    fabmo.showDRO();
     DoJobFile();
 });
 $("#call-zup").click(function(evt) {
