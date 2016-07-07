@@ -22,18 +22,29 @@
   	</script>
 
     <div class="container">
+      <form id="doclength">
+        <label for="long">Long</label>
+        <input type="radio" name="doclength" id="long" value="long" checked="checked">
+        <label for="short">Short</label>
+        <input type="radio" name="doclength" id="short" value="short">
+      </form>
+
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#tab-startfire" role="tab" data-toggle="tab"><strong>Quick Launch</strong></a></li>
         <li><a href="#tab-details" role="tab" data-toggle="tab"><strong>Next Steps</strong></a></li>
         <li><a id="config-tab-link" href="#tab-config" role="tab" data-toggle="tab"><strong>Getting HELP</strong></a></li>
       </ul>
+      
 
       <div class="tab-content">
         <!-- Launch pane -->
         <div class="tab-pane active" id="tab-startfire">
 
+  
+
 			<div class="jumbotron">
+      
 				<p>[These instructions follow-on the "Handibot 2 Manual: Unboxing" document ...]</p>
 			  <h1>Hello! Welcome to Handibotting ...</h1>
 	            <p>First, to help you finish unpacking we'll move the Z-axis &mdash; it's the up-down, vertical axis that moves the router &mdash; to a higher position so you can remove the protective foam cylinder.</p>
@@ -182,6 +193,14 @@
               return false;
             }
           });
+          $('#doclength').change(function(){
+            var that = $('input[name="doclength"]:checked').val();
+            if (that === "long"){
+              $('.long').slideDown();
+            } else if (that === "short"){
+              $('.long').slideUp();
+            }
+          })
         });
     </script>
 
