@@ -22,12 +22,6 @@
   	</script>
 
     <div class="container">
-      <form id="doclength">
-        <label for="long">Long</label>
-        <input type="radio" name="doclength" id="long" value="long" checked="checked">
-        <label for="short">Short</label>
-        <input type="radio" name="doclength" id="short" value="short">
-      </form>
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
@@ -197,15 +191,7 @@
               return false;
             }
           });
-          $('#doclength').change(function(){
-            var that = $('input[name="doclength"]:checked').val();
-            if (that === "long"){
-              $('.long').slideDown();
-            } else if (that === "short"){
-              $('.long').slideUp();
-            }
-          })
-        });
+	    });
     </script>
 
   </body>
