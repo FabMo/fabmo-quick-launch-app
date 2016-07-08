@@ -1,5 +1,6 @@
 body {
-	margin-top: 10px;
+
+	padding-top: 41px;
 }
 
 #config-system-config {
@@ -17,3 +18,12 @@ body {
 	margin-right: auto;
 }
 
+
+
+.tabs-container{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	height:41px;
+	top: 0;
+}
