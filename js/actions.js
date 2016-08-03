@@ -37,6 +37,7 @@ $("#run-test").click(function(evt) {
     DoJobFile();
 });
 $("#call-zup").click(function(evt) {
+    fabmo.runSBP('ZZ');
     fabmo.runSBP('MZ,4');
 });
 
