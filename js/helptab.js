@@ -16,24 +16,17 @@ function getUsrResource(remote, local) {
 
 // Calls to Display System
 $("#get-safety").click(function(evt) {
-    getUsrResource('http://docs.handibot.com/doc-output/Handibot_Safety.pdf', 'assets/docs/Handibot 2 MANUAL Safe Use Source_v002.pdf');
+    getUsrResource('http://docs.handibot.com/doc-output/Handibot2_Safety.pdf', 'assets/docs/Handibot2_Safety.pdf');
 });
 $("#get-manual").click(function(evt) {
-    fabmo.navigate('http://docs.handibot.com', {target : '_blank'});
+    getUsrResource('http://docs.handibot.com', 'assets/docs/Handibot2_DOCS.pdf') 
 });
 $("#go-forum").click(function(evt) {
-    fabmo.navigate('https://handibot.com/forum/list.php?2', {target : '_blank'});
+    getUsrResource('https://handibot.com/forum/list.php?2', 'assets/docs/No_Internet.pdf');
 });
 $("#get-design").click(function(evt) {
-    fabmo.navigate('http://docs.handibot.com', {target : '_blank'});
+    getUsrResource('http://docs.handibot.com', 'assets/docs/Handibot2_DesignSoftware.pdf');
 });
-
-
-
-//        getUsrResource('http://www.shopbottools.com/ShopBotDocs/files/SBG00253140912CommandRefV3.pdf', 'assets/docs/ComRef.pdf')       
-//        getUsrResource('https://handibot.com/forum/list.php?2', 'assets/docs/No_Internet.pdf');
-
-
 
 
 // Other
@@ -41,9 +34,5 @@ $("#config-tab-link").click(function(evt) {
 	fabmo.getConfig(function(err, cfg) {
 		$('#config-system-config').text(JSON.stringify(cfg));
 	});
-});
-
-fabmo.getConfig(function(err, cfg) {
-	$('#config-system-config').text(JSON.stringify(cfg));
 });
 
