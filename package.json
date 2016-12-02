@@ -1,12 +1,12 @@
 {
-  "name": "Quick Launch",
+  "name": "Quick-Launch",
   "main": "./index.html",
   "icon": "icon.png",
   "icon_color": "green",
   "version": "1.2.0",
   "author": "Ted Hall + Ryan Sturmer",
   "website": "http://www.handibot.com",
-  "description": "Running a first file with your Handibot ...",
+  "description": "Handibot first-time-run and utilities",
   "id": "fabmo-quick-launch",
   "devDependencies": {
     "grunt": "^0.4.5",
